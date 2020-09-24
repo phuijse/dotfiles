@@ -1,4 +1,8 @@
+- defaults:
+  link:
+    create: true
+    relink: true
+
 - link:
-    ~/.vimrc: 
-      path: vimrc
-      relink: true
+    ~/.vimrc: vimrc
+    ~/.vim: vim
