@@ -6,6 +6,8 @@
 - link:
     ~/.vimrc: vimrc
     ~/.vim: vim
+    ~/.zshrc: zshrc
+    ~/.zprofile: zprofile
 
 
 - create:
