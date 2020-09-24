@@ -12,3 +12,4 @@
 
 - create:
   - ~/.vim/undo-history
+  - ~/.vim/pack/plugins/start
