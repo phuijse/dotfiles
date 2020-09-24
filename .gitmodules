@@ -6,3 +6,6 @@
 	path = vim/pack/syntax/start/julia-vim
     url = git://github.com/JuliaEditorSupport/julia-vim.git
     ignore = dirty
+[submodule "vim/pack/plugins/start/vim-slime"]
+	path = vim/pack/plugins/start/vim-slime
+	url = https://github.com/jpalardy/vim-slime.git
