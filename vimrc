@@ -36,6 +36,8 @@ set laststatus=2
 "Jedi and supertab
 let g:jedi#popup_on_dot = 0
 let g:SuperTabDefaultCompletionType = "context"
+let g:slime_target = "tmux" 
+let g:slime_python_ipython = 1
 "autocmd FileType python setlocal completeopt-=preview
 "Disable swap files
 set nobackup
