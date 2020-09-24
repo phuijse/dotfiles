@@ -2,3 +2,7 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "vim/pack/plugins/start/julia-vim"]
+	path = vim/pack/plugins/start/julia-vim
+    url = git://github.com/JuliaEditorSupport/julia-vim.git
+    ignore = dirty
