@@ -11,6 +11,7 @@
     ~/.config/alacritty: alacritty
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
+    ~/.local/bin/launch_repl.sh: launch_repl.sh
 
 
 - create:

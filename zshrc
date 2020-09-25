@@ -107,3 +107,5 @@ fi
 source $ZSH/oh-my-zsh.sh
 
 source ~/miniconda3/etc/profile.d/conda.sh
+
+export PATH="${PATH}:/home/${USER}/.local/bin"
