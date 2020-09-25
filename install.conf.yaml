@@ -6,6 +6,9 @@
 - link:
     ~/.vimrc: vimrc
     ~/.vim: vim
+    ~/.config/sway: sway
+    ~/.config/waybar: waybar
+    ~/.config/alacritty: alacritty
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
 
