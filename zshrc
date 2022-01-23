@@ -106,6 +106,6 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
-source ~/miniconda3/etc/profile.d/conda.sh
-
+alias ssh="kitty +kitten ssh"
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 export PATH="${PATH}:/home/${USER}/.local/bin"
