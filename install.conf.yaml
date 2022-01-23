@@ -6,6 +6,7 @@
 - link:
     ~/.vimrc: vimrc
     ~/.vim: vim
+    ~/.config/kitty/kitty.conf: kitty.conf
     ~/.config/sway: sway
     ~/.config/waybar: waybar
     ~/.config/alacritty: alacritty
@@ -15,6 +16,7 @@
 
 
 - create:
+  - ~/.config/kitty
   - ~/.vim/undo-history
   - ~/.vim/pack/syntax/start
   - ~/.vim/pack/plugins/start
