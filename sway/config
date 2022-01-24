@@ -189,7 +189,7 @@ input * {
 #    xkb_options "grp:win_space_toggle"
 }
 
-
+include /etc/sway/config.d/*
 #exec --no-startup-id setxkbmap latam
 # exec firefox on workspace 2 and go back to on 1
 exec --no-startup-id swaymsg 'workspace 2; exec kitty; workspace 1'
