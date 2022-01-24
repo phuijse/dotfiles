@@ -30,7 +30,7 @@ font pango:monospace 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -172,7 +172,7 @@ bindsym $mod+r mode "resize"
 
 
 
-input "2:7:SynPS/2_Synaptics_TouchPad" {
+input type:touchpad {
     tap enabled
     natural_scroll enabled
 }
@@ -192,7 +192,7 @@ input * {
 
 #exec --no-startup-id setxkbmap latam
 # exec firefox on workspace 2 and go back to on 1
-exec --no-startup-id swaymsg 'workspace 2; exec alacritty; workspace 1'
+exec --no-startup-id swaymsg 'workspace 2; exec kitty; workspace 1'
 # exec --no-startup-id swaymsg 'workspace 3; exec pcmanfm; workspace 1'
 exec --no-startup-id firefox
 exec mako
