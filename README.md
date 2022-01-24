@@ -1,6 +1,6 @@
 Packages
 
-    pacman -S sway waybar mako kitty vim 
+    pacman -S sway xdg-desktop-portal-wlr brightnessctl waybar wofi mako otf-font-awesome kitty gvim  
 
 Then from this repo
 
