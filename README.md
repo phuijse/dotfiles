@@ -1,3 +1,12 @@
+Packages
+
+    pacman -S sway waybar mako kitty vim 
+
+Then from this repo
+
+    ./install
+
+To create this repo:
 
 1. git init
 1. git submodule add https://github.com/anishathalye/dotbot
