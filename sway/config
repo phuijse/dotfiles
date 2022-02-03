@@ -200,7 +200,10 @@ exec waybar
 exec gammastep-indicator
 #gaps inner 5
 #gaps outer 0
-
+exec swayidle -w \
+	timeout 600 'swaylock' \
+	timeout 600 'swaymsg "output * dpms off"' \
+	resume 'swaymsg "output * dpms on"'
 #for_window [window_role="pop-up"] floating enable
 #for_window [window_role="task_dialog"] floating enable
 bindsym XF86AudioRaiseVolume exec pactl set-sink-mute @DEFAULT_SINK@ false; exec pactl set-sink-volume @DEFAULT_SINK@ +5%   
