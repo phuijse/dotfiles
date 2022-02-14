@@ -5,6 +5,7 @@ emulate sh -c 'source /etc/profile'
 
 export XDG_SESSION_TYPE=wayland
 export XDG_CURRENT_DESKTOP=sway
+export XDG_CONFIG_HOME=$HOME/.config
 export MOZ_ENABLE_WAYLAND=1
 if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
   exec dbus-run-session sway
