@@ -11,6 +11,7 @@
     ~/.config/waybar: waybar
     ~/.config/alacritty: alacritty
     ~/.config/gammastep/config.ini: gammastep.conf
+    ~/.config/wofi/style.css: wofi-style.css
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
     ~/.local/bin/launch_repl.sh: launch_repl.sh
@@ -19,6 +20,7 @@
 - create:
   - ~/.config/kitty
   - ~/.config/gammastep
+  - ~/.config/wofi 
   - ~/.vim/undo-history
   - ~/.vim/pack/syntax/start
   - ~/.vim/pack/plugins/start
