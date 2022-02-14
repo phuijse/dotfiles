@@ -10,6 +10,7 @@
     ~/.config/sway: sway
     ~/.config/waybar: waybar
     ~/.config/alacritty: alacritty
+    ~/.config/gammastep/config.ini: gammastep.conf
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
     ~/.local/bin/launch_repl.sh: launch_repl.sh
@@ -17,6 +18,7 @@
 
 - create:
   - ~/.config/kitty
+  - ~/.config/gammastep
   - ~/.vim/undo-history
   - ~/.vim/pack/syntax/start
   - ~/.vim/pack/plugins/start
