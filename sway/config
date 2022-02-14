@@ -166,7 +166,7 @@ exec mako
 exec waybar
 # Tone
 exec gammastep-indicator
-gaps inner 10
+gaps inner 5
 gaps outer 0
 
 #exec swayidle -w \
