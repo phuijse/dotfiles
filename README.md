@@ -1,6 +1,6 @@
 Packages
 
-    pacman -S sway swaylock swayidle xdg-desktop-portal-wlr brightnessctl waybar wofi mako otf-font-awesome kitty gvim grim 
+    pacman -S sway swaylock swayidle xdg-desktop-portal-wlr brightnessctl waybar wofi mako otf-font-awesome kitty gvim grim flameshot 
 
 Then from this repo
 
