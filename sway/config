@@ -166,6 +166,9 @@ exec mako
 exec waybar
 # Tone
 exec gammastep-indicator
+# Screenshots
+exec flameshot
+# gaps
 gaps inner 5
 gaps outer 0
 
