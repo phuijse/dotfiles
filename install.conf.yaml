@@ -9,6 +9,7 @@
     ~/.config/kitty/kitty.conf: kitty.conf
     ~/.config/sway: sway
     ~/.config/waybar: waybar
+    ~/.config/swaylock/config: swaylock.conf
     ~/.config/alacritty: alacritty
     ~/.config/gammastep/config.ini: gammastep.conf
     ~/.config/wofi/style.css: wofi-style.css
@@ -21,6 +22,7 @@
   - ~/.config/kitty
   - ~/.config/gammastep
   - ~/.config/wofi 
+  - ~/.config/swaylock
   - ~/.vim/undo-history
   - ~/.vim/pack/syntax/start
   - ~/.vim/pack/plugins/start
