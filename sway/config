@@ -176,4 +176,8 @@ gaps outer 0
 exec swayidle -w \
     timeout 600 'swaylock'
 
+# for apps using xdg-desktop-portal
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
 include /etc/sway/config.d/*
