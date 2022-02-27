@@ -13,9 +13,11 @@
     ~/.config/alacritty: alacritty
     ~/.config/gammastep/config.ini: gammastep.conf
     ~/.config/wofi/style.css: wofi-style.css
+    ~/.config/fontconfig/fonts.conf: fonts.conf
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
     ~/.local/bin/launch_repl.sh: launch_repl.sh
+
 
 
 - create:
@@ -26,3 +28,4 @@
   - ~/.vim/undo-history
   - ~/.vim/pack/syntax/start
   - ~/.vim/pack/plugins/start
+  - ~/.config/fontconfig/ 
