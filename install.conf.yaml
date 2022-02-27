@@ -6,7 +6,7 @@
 - link:
     ~/.vimrc: vimrc
     ~/.vim: vim
-    ~/.config/kitty/kitty.conf: kitty.conf
+    ~/.config/kitty: kitty
     ~/.config/sway: sway
     ~/.config/waybar: waybar
     ~/.config/swaylock/config: swaylock.conf
@@ -21,7 +21,6 @@
 
 
 - create:
-  - ~/.config/kitty
   - ~/.config/gammastep
   - ~/.config/wofi 
   - ~/.config/swaylock
