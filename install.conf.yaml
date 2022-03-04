@@ -9,12 +9,12 @@
     ~/.config/kitty: kitty
     ~/.config/sway: sway
     ~/.config/waybar: waybar
-    ~/.config/swaylock/config: swaylock.conf
+    ~/.config/swaylock: swaylock
     ~/.config/alacritty: alacritty
-    ~/.config/gammastep/config.ini: gammastep.conf
-    ~/.config/wofi/style.css: wofi-style.css
+    ~/.config/gammastep: gammastep
+    ~/.config/wofi: wofi
     ~/.config/mako: mako
-    ~/.config/fontconfig/fonts.conf: fonts.conf
+    ~/.config/fontconfig: fontconfig
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
     ~/.local/bin/launch_repl.sh: launch_repl.sh
@@ -22,10 +22,6 @@
 
 
 - create:
-  - ~/.config/gammastep
-  - ~/.config/wofi 
-  - ~/.config/swaylock
   - ~/.vim/undo-history
   - ~/.vim/pack/syntax/start
   - ~/.vim/pack/plugins/start
-  - ~/.config/fontconfig/ 
