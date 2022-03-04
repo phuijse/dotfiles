@@ -13,6 +13,7 @@
     ~/.config/alacritty: alacritty
     ~/.config/gammastep/config.ini: gammastep.conf
     ~/.config/wofi/style.css: wofi-style.css
+    ~/.config/mako: mako
     ~/.config/fontconfig/fonts.conf: fonts.conf
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
