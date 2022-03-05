@@ -1,12 +1,11 @@
-Packages
+# ArchLinux + Swaywm dotfiles
 
-    pacman -S sway swaylock swayidle xdg-desktop-portal-wlr xdg-desktop-portal-gtk brightnessctl waybar wofi mako otf-font-awesome kitty neovim grim flameshot btop fish lsd 
+Clone this repo, cd to it and
 
-Then from this repo
-
+    ./install_dependencies.sh
     ./install
 
-To create this repo:
+This repo was created with
 
 1. git init
 1. git submodule add https://github.com/anishathalye/dotbot
