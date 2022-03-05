@@ -23,20 +23,22 @@ syntax sync fromstart
 " Theme
 colorscheme catppuccin
 set termguicolors
-"filetype indent plugin on
-"set t_Co=256
-"set modeline
 
 " Copy and paste
 set clipboard=unnamed
 set mouse=v  " Middle click paste
 
+" Nvim Tree 
+nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <leader>r :NvimTreeRefresh<CR>
+nnoremap <leader>n :NvimTreeFindFile<CR>
+
 " Tab navigation
 let mapleader =","
 set showcmd
-map <Leader>n <esc>:tabprevious<CR>
-map <Leader>m <esc>:tabnext<CR>
-nnoremap <C-t> :tabnew<CR>
+"map <Leader>n <esc>:tabprevious<CR>
+"map <Leader>m <esc>:tabnext<CR>
+"nnoremap <C-t> :tabnew<CR>
 
 " Move between splits
 map <C-J> <C-W>j

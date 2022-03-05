@@ -25,14 +25,16 @@ return require('packer').startup(function(use)
 
   use {
       'feline-nvim/feline.nvim',
+      requires = {
+          'kyazdani42/nvim-web-devicons', 
+      },
       config = function()
           require('feline').setup({
               components = require('catppuccin.core.integrations.feline'),
           })
       end
   }
-
-  use 'kyazdani42/nvim-web-devicons'
+  
 
   use {
       'lewis6991/gitsigns.nvim',
@@ -41,6 +43,16 @@ return require('packer').startup(function(use)
       },
       config = function()
           require('gitsigns').setup()
+      end
+  }
+
+  use {
+      'kyazdani42/nvim-tree.lua',
+      requires = {
+          'kyazdani42/nvim-web-devicons', -- optional, for file icon
+      },
+      config = function() 
+          require'nvim-tree'.setup()
       end
   }
 
