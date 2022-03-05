@@ -13,8 +13,9 @@
     ~/.config/gammastep: gammastep
     ~/.config/wofi: wofi
     ~/.config/mako: mako
-    ~/.config/fontconfig: fontconfig
     ~/.config/btop: btop
+    ~/.config/fish: fish
+    ~/.config/fontconfig: fontconfig
     ~/.local/share/fonts: fonts
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile

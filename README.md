@@ -1,6 +1,6 @@
 Packages
 
-    pacman -S sway swaylock swayidle xdg-desktop-portal-wlr xdg-desktop-portal-gtk brightnessctl waybar wofi mako otf-font-awesome kitty neovim grim flameshot btop 
+    pacman -S sway swaylock swayidle xdg-desktop-portal-wlr xdg-desktop-portal-gtk brightnessctl waybar wofi mako otf-font-awesome kitty neovim grim flameshot btop fish 
 
 Then from this repo
 
