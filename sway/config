@@ -158,15 +158,15 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-mute @DEFAULT_SINK@ false; exec
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 bindsym Print exec flameshot gui
+
 # Starting apps
-exec --no-startup-id swaymsg 'workspace 2; exec kitty; workspace 1'
-exec --no-startup-id firefox
-# Nofitications
-exec mako 
-# Toolbar
-exec waybar
-# Tone
-exec gammastep-indicator
+exec swaymsg 'workspace 2; exec kitty; workspace 1'
+exec firefox
+exec mako # Notifications
+exec waybar # Toolbar
+exec gammastep-indicator # Redshift 
+exec udiskie -a -t # automount 
+
 # gaps
 gaps inner 5
 gaps outer 0
