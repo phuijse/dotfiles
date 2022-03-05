@@ -26,8 +26,9 @@ colorscheme catppuccin
 "set t_Co=256
 "set modeline
 
-"Better copy and paste
+" Copy and paste
 set clipboard=unnamed
+set mouse=v  " Middle click paste
 
 " Tab navigation
 let mapleader =","
@@ -49,6 +50,7 @@ set ruler " show cursor position
 set cursorline 
 set wrap
 set showtabline=4
+set showmatch " Matching bracket
 
 " Persistent undo 
 set undofile
