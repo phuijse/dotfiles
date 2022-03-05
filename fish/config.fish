@@ -5,6 +5,8 @@ end
 fish_add_path -p /home/{$USER}/.local/bin 
 source /opt/miniconda3/etc/fish/conf.d/conda.fish
 
+zoxide init fish | source
+
 export XDG_SESSION_TYPE=wayland
 export XDG_CURRENT_DESKTOP=sway
 export XDG_SESSION_DESKTOP=sway
