@@ -14,13 +14,11 @@
     ~/.config/wofi: wofi
     ~/.config/mako: mako
     ~/.config/fontconfig: fontconfig
+    ~/.local/share/fonts: fonts
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
     ~/.local/bin/launch_repl.sh: launch_repl.sh
 
 
-
-- create:
-  - ~/.vim/undo-history
-  - ~/.vim/pack/syntax/start
-  - ~/.vim/pack/plugins/start
+#- create:
+#  - ~/.vim/pack/plugins/start
