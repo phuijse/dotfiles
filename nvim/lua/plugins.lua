@@ -20,8 +20,20 @@ vim.cmd([[
 return require('packer').startup(function(use)
   -- Packer can manage itself as an optional plugin
   use {'wbthomason/packer.nvim', opt = true}
-
-  use {'catppuccin/nvim', as = "catppuccin"}
+  
+  use 'neovim/nvim-lspconfig'
+  
+  use {
+      'catppuccin/nvim', as = "catppuccin",
+      config = function()
+          require('catppuccin').setup {
+              transparent_background = true,
+              integrations = {
+                  lsp_trouble = true,
+              }
+          }
+      end
+  }
 
   use {
       'feline-nvim/feline.nvim',
@@ -48,11 +60,24 @@ return require('packer').startup(function(use)
 
   use {
       'kyazdani42/nvim-tree.lua',
-      requires = {
-          'kyazdani42/nvim-web-devicons', -- optional, for file icon
-      },
+      requires = 'kyazdani42/nvim-web-devicons',
       config = function() 
-          require'nvim-tree'.setup()
+          require'nvim-tree'.setup {
+              auto_close = true,
+              hijack_cursor = true,
+              filters = {
+                  dotfiles = true,
+              }
+          }
+      end
+  }
+  
+  use {
+      "folke/trouble.nvim",
+      requires = "kyazdani42/nvim-web-devicons",
+      config = function()
+          require("trouble").setup {
+          }
       end
   }
 

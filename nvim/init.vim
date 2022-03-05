@@ -1,4 +1,7 @@
 lua require('plugins')
+lua require('lspconfig').pyright.setup{}
+
+let mapleader =","
 
 " " Encoding
 set encoding=utf-8
@@ -29,13 +32,14 @@ set clipboard=unnamed
 set mouse=v  " Middle click paste
 
 " Nvim Tree 
-nnoremap <C-n> :NvimTreeToggle<CR>
+noremap <C-n> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
 
+" Trouble
+nnoremap <leader>xx <cmd>TroubleToggle<cr>
+
 " Tab navigation
-let mapleader =","
-set showcmd
 "map <Leader>n <esc>:tabprevious<CR>
 "map <Leader>m <esc>:tabnext<CR>
 "nnoremap <C-t> :tabnew<CR>
@@ -54,6 +58,7 @@ set cursorline
 set wrap
 set showtabline=4
 set showmatch " Matching bracket
+set showcmd
 
 " Persistent undo 
 set undofile
