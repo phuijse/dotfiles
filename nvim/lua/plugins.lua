@@ -23,6 +23,27 @@ return require('packer').startup(function(use)
 
   use {'catppuccin/nvim', as = "catppuccin"}
 
+  use {
+      'feline-nvim/feline.nvim',
+      config = function()
+          require('feline').setup({
+              components = require('catppuccin.core.integrations.feline'),
+          })
+      end
+  }
+
+  use 'kyazdani42/nvim-web-devicons'
+
+  use {
+      'lewis6991/gitsigns.nvim',
+      requires = {
+          'nvim-lua/plenary.nvim'
+      },
+      config = function()
+          require('gitsigns').setup()
+      end
+  }
+
 end)
 
 

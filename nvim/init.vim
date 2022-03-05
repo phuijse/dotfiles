@@ -22,6 +22,7 @@ syntax sync fromstart
 
 " Theme
 colorscheme catppuccin
+set termguicolors
 "filetype indent plugin on
 "set t_Co=256
 "set modeline
