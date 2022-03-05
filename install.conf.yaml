@@ -4,8 +4,7 @@
       relink: true
 
 - link:
-    ~/.vimrc: vimrc
-    ~/.vim: vim
+    ~/.config/nvim: nvim
     ~/.config/kitty: kitty
     ~/.config/sway: sway
     ~/.config/waybar: waybar
