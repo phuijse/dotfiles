@@ -9,7 +9,7 @@ pacman -S udiskie usbutils exfat-utils ntfs-3g thunar thunar-volman gvfs
 # Wayland compatibility
 pacman -S xdg-desktop-portal-wlr xdg-desktop-portal-gtk qt5-wayland xlsclients xorg-xwayland xorg-xlsclients 
 # CLI
-pacman -S fish bat btop lsd duf procs fzf fd zoxide grim neovim git github-cli wget rsync
+pacman -S fish bat btop lsd duf procs fzf fd zoxide grim neovim git github-cli wget rsync pass
 # Graphical
 pacman -S firefox flameshot vlc discord
 # Fonts

@@ -15,7 +15,7 @@ export MOZ_ENABLE_WAYLAND=1
 export SDL_VIDEODRIVER=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1
 export QT_QPA_PLATFORM=wayland
-
+export PASSWORD_STORE_X_SELECTION=primary
 
 if status is-login
     if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
