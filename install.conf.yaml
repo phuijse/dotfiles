@@ -17,6 +17,7 @@
     ~/.config/fish: fish
     ~/.config/fontconfig: fontconfig
     ~/.local/share/fonts: fonts
+    ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
     ~/.local/bin/launch_repl.sh: launch_repl.sh
