@@ -20,6 +20,6 @@ export PASSWORD_STORE_X_SELECTION=primary
 
 if status is-login
     if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
-        exec dbus-run-session sway
+        exec dbus-run-session sway --unsupported-gpu
     end
 end
