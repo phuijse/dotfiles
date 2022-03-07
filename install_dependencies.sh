@@ -14,3 +14,7 @@ pacman -S fish starship bat btop lsd duf procs fzf fd zoxide grim neovim git git
 pacman -S firefox flameshot vlc discord
 # Fonts
 pacman -S otf-font-awesome woff2-fira-code
+# pikaur
+pacman -S pyalpm
+# Omf
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
