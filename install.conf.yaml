@@ -17,8 +17,6 @@
     ~/.config/fish: fish
     ~/.config/starship.toml: starship.toml
     ~/.gitconfig: gitconfig
-    ~/.zshrc: zshrc
-    ~/.zprofile: zprofile
     ~/.local/bin/launch_repl.sh: launch_repl.sh
 
 
