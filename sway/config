@@ -171,12 +171,10 @@ exec udiskie -a -t # automount
 gaps inner 5
 gaps outer 0
 
-#exec swayidle -w \
-#	timeout 60 'swaylock' \
-#	timeout 120 'swaymsg "output * dpms off"' \
-#	resume 'swaymsg "output * dpms on"'
 exec swayidle -w \
-    timeout 600 'swaylock'
+	timeout 300 'swaylock -f -c 222222' \
+	timeout 310 'swaymsg "output * dpms off"' \
+	resume 'swaymsg "output * dpms on"' 
 
 # for apps using xdg-desktop-portal
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
