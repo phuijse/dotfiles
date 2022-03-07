@@ -15,6 +15,7 @@
     ~/.config/mako: mako
     ~/.config/btop: btop
     ~/.config/fish: fish
+    ~/.config/starship.toml: starship.toml
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
