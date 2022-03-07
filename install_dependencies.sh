@@ -7,7 +7,7 @@ pacman -S sway swaylock swayidle waybar wofi mako brightnessctl wl-clipboard gam
 # Filesystem
 pacman -S udiskie usbutils exfat-utils ntfs-3g thunar thunar-volman gvfs
 # Wayland compatibility
-pacman -S xdg-desktop-portal-wlr xdg-desktop-portal-gtk qt5-wayland xlsclients xorg-xwayland xorg-xlsclients 
+pacman -S xdg-desktop-portal-wlr xdg-desktop-portal-gtk qt5-wayland xlsclients xorg-xwayland xorg-xslclients 
 # CLI
 pacman -S fish starship bat btop lsd duf procs fzf fd zoxide grim neovim git github-cli wget rsync pass
 # Graphical
