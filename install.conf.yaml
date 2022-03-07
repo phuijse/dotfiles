@@ -15,8 +15,6 @@
     ~/.config/mako: mako
     ~/.config/btop: btop
     ~/.config/fish: fish
-    ~/.config/fontconfig: fontconfig
-    ~/.local/share/fonts: fonts
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
