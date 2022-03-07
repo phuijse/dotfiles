@@ -1,7 +1,7 @@
 #!/bin/sh
 pacman -Syy
 # System and drivers
-pacman -S base base-devel libva-intel-driver vulkan-intel
+pacman -S base base-devel libva-intel-driver vulkan-intel man-db
 # Window manager
 pacman -S sway swaylock swayidle waybar wofi mako brightnessctl wl-clipboard gammastep
 # Filesystem
@@ -13,4 +13,4 @@ pacman -S fish bat btop lsd duf procs fzf fd zoxide grim neovim git github-cli w
 # Graphical
 pacman -S firefox flameshot vlc discord
 # Fonts
-pacman -S otf-font-awesome
+pacman -S otf-font-awesome woff2-fira-code
