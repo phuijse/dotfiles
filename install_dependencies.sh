@@ -13,7 +13,7 @@ pacman -S kitty fish starship bat btop lsd duf procs fzf fd zoxide grim neovim g
 # Graphical
 pacman -S firefox flameshot vlc discord
 # Fonts
-pacman -S ttf-fira-sans ttf-fira-mono ttf-fira-code
+pacman -S otf-font-awesome ttf-fira-sans ttf-fira-mono ttf-fira-code
 # pikaur
 pacman -S pyalpm
 # Omf
