@@ -3,8 +3,8 @@
     border-radius: 0;
     /* `otf-font-awesome` is required to be installed for icons */
     /*font-family: Roboto, Helvetica, Arial, sans-serif;*/
-    font-family: monospace;
-    font-size: 15px;
+    font-family: Fira Code;
+    font-size: 16px;
     min-height: 0;
 }
 
@@ -121,7 +121,6 @@ label:focus {
 
 #cpu {
     background-color: #2ecc71;
-    color: #000000;
 }
 
 #memory {
@@ -165,6 +164,7 @@ label:focus {
 }
 
 #temperature {
+    color: #000000;
     background-color: #f0932b;
 }
 
