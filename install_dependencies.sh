@@ -15,7 +15,7 @@ pacman -S neovim pyright git github-cli
 # Graphical
 pacman -S firefox flameshot vlc discord
 # Fonts
-pacman -S otf-font-awesome ttf-fira-sans ttf-fira-mono ttf-fira-code
+pacman -S otf-font-awesome ttf-fira-sans ttf-fira-mono ttf-fira-code noto-fonts-emoji ttf-nerd-fonts-symbols
 # pikaur
 pacman -S pyalpm
 # Omf
