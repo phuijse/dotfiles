@@ -1,6 +1,19 @@
 lua require('plugins')
 lua require('lspconfig').pyright.setup{}
 
+lua << EOF
+local iron = require('iron')
+
+iron.core.set_config {
+  repl_open_cmd = "rightbelow 10 split",
+  preferred={
+    python = "ipython"
+  }
+}
+EOF
+" autocmd BufLeave * if &buftype == 'terminal' | :set nowfw | endif
+tnoremap <Esc> <C-\><C-n>
+
 let mapleader =","
 
 " " Encoding

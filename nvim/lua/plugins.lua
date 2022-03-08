@@ -20,6 +20,8 @@ vim.cmd([[
 return require('packer').startup(function(use)
   -- Packer can manage itself as an optional plugin
   use {'wbthomason/packer.nvim', opt = true}
+
+  use 'hkupty/iron.nvim'
   
   use 'fladson/vim-kitty'
   
