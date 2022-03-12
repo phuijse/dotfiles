@@ -19,4 +19,4 @@ pacman -S otf-font-awesome ttf-fira-sans ttf-fira-mono ttf-fira-code noto-fonts-
 # pikaur
 pacman -S pyalpm
 # Omf
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+# curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
