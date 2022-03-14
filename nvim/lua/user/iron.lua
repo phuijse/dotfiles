@@ -7,8 +7,6 @@ iron.core.set_config {
   }
 }
 
-
-
 local keymap = vim.api.nvim_set_keymap
 
 keymap("v", "<leader><CR>", "<Plug>(iron-visual-send)", {})
