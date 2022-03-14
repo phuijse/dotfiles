@@ -1,5 +1,4 @@
 #!/bin/sh
-pacman -Syy
 # System and drivers
 pacman -S base base-devel libva-intel-driver vulkan-intel man-db
 # Window manager
