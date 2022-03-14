@@ -28,7 +28,10 @@ return require('packer').startup(function(use)
       'fladson/vim-kitty',
       'neovim/nvim-lspconfig',
       'folke/lsp-colors.nvim',
-      'hrsh7th/nvim-cmp', 
+      'hrsh7th/nvim-cmp',
+      'hrsh7th/cmp-buffer', -- buffer completions
+      'hrsh7th/cmp-path', -- path completions
+      'hrsh7th/cmp-cmdline', -- cmdline completions
       'hrsh7th/cmp-nvim-lsp',
       -- 'glepnir/lspsaga.nvim',
       -- 'RishabhRD/popfix',
