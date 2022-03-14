@@ -1,6 +1,6 @@
 require("_options")
 require("_plugins")
-require("_treesitter")
+require("treesitter")
 require("_iron")
 require("lsp")
 require("cmp")
