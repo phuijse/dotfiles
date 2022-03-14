@@ -1,5 +1,6 @@
-require("_options")
 require("_plugins")
+require("user.options")
+require("user.keymaps")
 require("user.treesitter")
 require("user.iron")
 require("user.lsp")
