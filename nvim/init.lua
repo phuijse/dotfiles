@@ -4,7 +4,7 @@ require("treesitter")
 require("_iron")
 require("lsp")
 require("cmp")
-require("_telescope")
+require("user.telescope")
 --require("_whichkey")
 --require("_statusline")
 

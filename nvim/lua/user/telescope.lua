@@ -1,6 +1,11 @@
-require("telescope").setup({
+local telescope = require("telescope")
+
+telescope.setup {
     defaults = {
         border = true,
+        prompt_prefix = " ",
+        selection_caret = " ",
+        path_display = { "smart" },
         layout_strategy = "bottom_pane",
         layout_config = {
             height = 0.30,
@@ -9,7 +14,7 @@ require("telescope").setup({
         -- path_display = { "shorten" },
         sorting_strategy = "ascending",
     },
-})
+}
 
 local keymap = vim.api.nvim_set_keymap
 
