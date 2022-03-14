@@ -167,7 +167,8 @@ exec waybar # Toolbar
 exec gammastep-indicator # Redshift 
 exec udiskie -a -t # automount 
 
-# gaps
+# Looks
+default_border none  
 gaps inner 5
 gaps outer 0
 
