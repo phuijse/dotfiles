@@ -1,4 +1,3 @@
-vim.g.mapleader = ","
 vim.g.border_style = "rounded"
 
 local opt = vim.opt
