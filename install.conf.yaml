@@ -9,7 +9,6 @@
     ~/.config/sway: sway
     ~/.config/waybar: waybar
     ~/.config/swaylock: swaylock
-    ~/.config/alacritty: alacritty
     ~/.config/gammastep: gammastep
     ~/.config/wofi: wofi
     ~/.config/mako: mako
