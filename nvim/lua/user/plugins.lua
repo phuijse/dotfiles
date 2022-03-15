@@ -28,7 +28,7 @@ return require('packer').startup(function(use)
       'fladson/vim-kitty',
       'neovim/nvim-lspconfig',
       'folke/lsp-colors.nvim',
-      'hrsh7th/nvim-cmp',
+      'hrsh7th/nvim-cmp', -- autocompletion
       'hrsh7th/cmp-buffer', -- buffer completions
       'hrsh7th/cmp-path', -- path completions
       'hrsh7th/cmp-cmdline', -- cmdline completions
@@ -51,51 +51,10 @@ return require('packer').startup(function(use)
   use 'folke/tokyonight.nvim'
   
   use {
-      'catppuccin/nvim', as = "catppuccin",
-      config = function()
-          require('catppuccin').setup {
-              transparent_background = true,
-              integrations = {
-                  treesitter = true,
-                  native_lsp = {
-                      enabled = true,
-                      virtual_text = {
-                          errors = "italic",
-                          hints = "italic",
-                          warnings = "italic",
-                          information = "italic",
-                      },
-                      underlines = {
-                          errors = "underline",
-                          hints = "underline",
-                          warnings = "underline",
-                          information = "underline",
-                      },
-                  },
-                  lsp_trouble = true,
-                  lsp_saga = true,
-                  telescope = true,
-                  gitsigns = true,
-              }
-          }
-      end
+      'nvim-lualine/lualine.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
-
-
-  use {
-      'feline-nvim/feline.nvim',
-      requires = {
-          'kyazdani42/nvim-web-devicons', 
-      },
-      config = function()
-          require('feline').setup({
-              components = require('catppuccin.core.integrations.feline'),
-          })
-      end
-  }
-  
-
-
+ 
   use {
       'kyazdani42/nvim-tree.lua',
       requires = 'kyazdani42/nvim-web-devicons',
