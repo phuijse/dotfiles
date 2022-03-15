@@ -8,6 +8,7 @@ require("user.lsp")
 require("user.cmp")
 require("user.trouble")
 require("user.telescope")
+require("user.comment")
 --require("_whichkey")
 --require("_statusline")
 

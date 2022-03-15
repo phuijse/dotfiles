@@ -37,6 +37,7 @@ return require('packer').startup(function(use)
       -- 'RishabhRD/popfix',
       -- 'RishabhRD/nvim-lsputils',
   }
+  use 'terrortylor/nvim-comment'
   
   use {
       'nvim-telescope/telescope.nvim', 
