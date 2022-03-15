@@ -8,6 +8,8 @@ opt.cmdheight = 2
 opt.cursorline = true
 opt.fileencoding = "utf-8"
 opt.foldmethod = "manual"
+opt.list = true
+opt.listchars:append("eol:↴")
 opt.mouse = "a" -- all modes
 opt.number = true
 opt.numberwidth = 1

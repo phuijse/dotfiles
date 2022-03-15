@@ -38,7 +38,14 @@ return require('packer').startup(function(use)
       -- 'RishabhRD/nvim-lsputils',
   }
   use 'terrortylor/nvim-comment'
-  
+  use {
+      'lukas-reineke/indent-blankline.nvim',
+      config = function()
+          require('indent_blankline').setup({
+              show_end_of_line = true,
+          })
+  end
+  }
   use {
       'nvim-telescope/telescope.nvim', 
       requires = {'nvim-lua/plenary.nvim'}
@@ -46,7 +53,10 @@ return require('packer').startup(function(use)
   
   use {
       'lewis6991/gitsigns.nvim',
-      requires = {'nvim-lua/plenary.nvim'}
+      requires = {'nvim-lua/plenary.nvim'},
+      config = function()
+          require('gitsigns').setup()
+      end
   }
   
   use 'folke/tokyonight.nvim'
