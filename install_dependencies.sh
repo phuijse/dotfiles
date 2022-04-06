@@ -8,7 +8,7 @@ pacman -S udiskie usbutils exfat-utils ntfs-3g thunar thunar-volman gvfs
 # Wayland compatibility
 pacman -S xdg-desktop-portal-wlr xdg-desktop-portal-gtk qt5-wayland xorg-xwayland xorg-xlsclients 
 # Core tools
-pacman -S kitty fish starship bat btop lsd duf procs fzf fd zoxide grim wget rsync pass
+pacman -S kitty fish starship bat btop lsd duf procs fzf fd zoxide grim wget rsync pass imv
 # Developer tools
 pacman -S neovim pyright git github-cli diff-so-fancy
 # Graphical
