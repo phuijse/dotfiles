@@ -166,6 +166,8 @@ exec mako # Notifications
 exec waybar # Toolbar
 exec gammastep-indicator # Redshift 
 exec udiskie -a -t # automount 
+#exec "(ssh-agent -c)"
+#exec "/usr/bin/gnome-keyring-daemon --start"
 
 # Looks
 default_border none  
