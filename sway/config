@@ -138,8 +138,14 @@ bindsym $mod+r mode "resize"
 # Input configuration
 
 input type:touchpad {
+    dwt enabled # Disable while typing
     tap enabled
     natural_scroll enabled
+    middle_emulation enabled 
+    scroll_method two_finger
+    scroll_factor 0.5
+    accel_profile adaptive
+    tap_button_map lmr # 1 finger: left, 2 finger: right, 3 fingers: middle
 }
 
 input * {
