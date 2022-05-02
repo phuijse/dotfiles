@@ -14,7 +14,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start wofi
-bindsym $mod+d exec wofi --show run
+bindsym $mod+d exec wofi -I -G --show run
 
 # change focus
 bindsym $mod+j focus left
