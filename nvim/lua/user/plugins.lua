@@ -85,6 +85,14 @@ return require('packer').startup(function(use)
       requires = "kyazdani42/nvim-web-devicons",
   })
 
+  use({
+   "quarto-dev/quarto-vim",
+   requires = {
+      {"vim-pandoc/vim-pandoc-syntax"},
+   },
+   ft = {"quarto"},
+   })
+
 end)
 
 
