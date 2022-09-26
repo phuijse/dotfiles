@@ -1,53 +1,78 @@
-local execute = vim.api.nvim_command
 local fn = vim.fn
 
 local install_path = fn.stdpath('data') .. '/site/pack/packer/opt/packer.nvim'
 
 if fn.empty(fn.glob(install_path)) > 0 then
-    execute('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
-    execute 'packadd packer.nvim'
+    PACKER_BOOTSTRAP = fn.system {
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "https://github.com/wbthomason/packer.nvim",
+        install_path,
+    }
+    print "Installing packer close and reopen Neovim..."
+    vim.cmd [[packadd packer.nvim]]
 end
-
-vim.cmd [[packadd packer.nvim]]
 
 -- reload nvim whe this file is saved
 vim.cmd([[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost _plugins.lua source <afile> | PackerCompile
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync
   augroup end
 ]])
 
+local status_ok, packer = pcall(require, "packer")
+if not status_ok then
+  return
+end
 
-return require('packer').startup(function(use)
+-- Have packer use a popup window
+packer.init {
+  display = {
+    open_fn = function()
+      return require("packer.util").float { border = "rounded" }
+    end,
+  },
+}
+
+
+return packer.startup(function(use)
   -- Packer can manage itself as an optional plugin
   use {'wbthomason/packer.nvim', opt = true}
 
-  use {
-      'hkupty/iron.nvim',
+  use { --Others
       'nvim-lua/plenary.nvim',
       'windwp/nvim-autopairs',
       --'nvim-treesitter/nvim-treesitter',
       'kyazdani42/nvim-web-devicons',
       'kyazdani42/nvim-tree.lua',
-      'fladson/vim-kitty',
+      'RRethy/vim-illuminate', -- automatically highlighting other uses of the word under the cursor
+  }
+  use 'fladson/vim-kitty' -- For kitty terminal
+  use 'hkupty/iron.nvim' -- REPL for python
+  use { --LSP
       'neovim/nvim-lspconfig',
       'williamboman/nvim-lsp-installer',  -- simple to use language server installer
 	  'jose-elias-alvarez/null-ls.nvim',-- for formatters and linters
-      'RRethy/vim-illuminate', -- automatically highlighting other uses of the word under the cursor
       'folke/lsp-colors.nvim',
+      -- 'glepnir/lspsaga.nvim',
+      -- 'RishabhRD/popfix',
+      -- 'RishabhRD/nvim-lsputils',
+  }
+  use { --CMP
       'hrsh7th/nvim-cmp', -- autocompletion
       'hrsh7th/cmp-buffer', -- buffer completions
       'hrsh7th/cmp-path', -- path completions
       'hrsh7th/cmp-cmdline', -- cmdline completions
       'hrsh7th/cmp-nvim-lsp',
-      'hrsh7th/cmp-nvim-lua',
+      'hrsh7th/cmp-nvim-lua'
+  }
+  use { -- snipts
       'L3MON4D3/LuaSnip', --snippet engine
       'rafamadriz/friendly-snippets' -- a bunch of snippets to use
-      -- 'glepnir/lspsaga.nvim',
-      -- 'RishabhRD/popfix',
-      -- 'RishabhRD/nvim-lsputils',
-  }
+ }
   use 'terrortylor/nvim-comment'
   use {
       'lukas-reineke/indent-blankline.nvim',
@@ -89,6 +114,10 @@ return require('packer').startup(function(use)
    },
    ft = {"quarto"},
    })
+   
+   if PACKER_BOOTSTRAP then 
+       require("packer").sync()
+   end
 
 end)
 
