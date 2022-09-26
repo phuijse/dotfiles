@@ -10,6 +10,9 @@ require "user.cmp"
 require "user.trouble"
 require "user.telescope"
 require "user.comment"
+require "user.autopair"
+
+
 
 vim.g.tokyonight_style = "night"
 vim.cmd("colorscheme tokyonight")
