@@ -83,8 +83,8 @@ cmp.setup {
 			vim_item.kind = kind_icons[vim_item.kind]
 			vim_item.menu = ({
 				nvim_lsp = "[LSP]",
-				nvim_lua = "",
-				luasnip = "",
+				nvim_lua = "[NVIM LUA]",
+				luasnip = "[Snippet]",
 				buffer = "[buffer]",
 				path = "[path]",
 				emoji = "",
