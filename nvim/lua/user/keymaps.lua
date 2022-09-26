@@ -14,3 +14,7 @@ keymap("t", "<C-Left>", "<C-\\><C-N><C-w>h", opts)
 keymap("t", "<C-Down>", "<C-\\><C-N><C-w>j", opts)
 keymap("t", "<C-Up>", "<C-\\><C-N><C-w>k", opts)
 keymap("t", "<C-Right>", "<C-\\><C-N><C-w>l", opts)
+
+-- NvimTree
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+

@@ -41,7 +41,7 @@ return packer.startup(function(use)
   use { --Others
       'nvim-lua/plenary.nvim',
       'windwp/nvim-autopairs',
-      --'nvim-treesitter/nvim-treesitter',
+      'nvim-treesitter/nvim-treesitter',
       'kyazdani42/nvim-web-devicons',
       'kyazdani42/nvim-tree.lua',
       'RRethy/vim-illuminate', -- automatically highlighting other uses of the word under the cursor
