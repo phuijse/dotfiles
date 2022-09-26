@@ -16,6 +16,6 @@ pacman -S firefox flameshot vlc discord
 # Fonts
 pacman -S otf-font-awesome ttf-fira-sans ttf-fira-mono ttf-fira-code noto-fonts-emoji ttf-nerd-fonts-symbols
 # pikaur
-pacman -S pyalpm
+pacman -S pyalpm python-black flake8
 # Omf
 # curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
