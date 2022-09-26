@@ -3,10 +3,16 @@ if not cmp_status_ok then
   return
 end
 
+
+local snip_status_ok, luasnip = pcall(require, "luasnip")
+if not snip_status_ok then
+	return
+end
+
 cmp.setup {
   snippet = {
     expand = function(args)
-      --require('luasnip').lsp_expand(args.body)
+      require('luasnip').lsp_expand(args.body)
     end,
   },
   mapping = {
@@ -41,12 +47,18 @@ cmp.setup {
   },
   sources = {
     { name = 'nvim_lsp' },
+    { name = 'nvim_lua' },
     { name = "buffer" },
     { name = "path" },
-    --{ name = 'luasnip' },
+    { name = 'luasnip' },
   },
-  documentation = {
-    border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+  confirm_opts = {
+      behavior = cmp.ConfirmBehavior.Replace,
+      select = false,
+  },
+  window = {
+      completion = cmp.config.window.bordered(),
+      documentation = cmp.config.window.bordered(),
   },
 }
 
