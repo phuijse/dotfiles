@@ -69,14 +69,14 @@ local function lsp_keymaps(bufnr)
     --buf_set_keymap(bufnr, 'n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
     --buf_set_keymap(bufnr, 'n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
     --buf_set_keymap(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
-    --vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
+    vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting_sync()' ]]
 end
 
 M.on_attach = function(client, bufnr)
-    if client.name == "sumneko_lua" then 
-        client.resolved_capabilities.document_formatting = false 
+    if client.name == "sumneko_lua" then
+        client.resolved_capabilities.document_formatting = false
     end
-    
+
     lsp_keymaps(bufnr)
     local status_ok, illuminate = pcall(require, "illuminate")
     if not status_ok then
