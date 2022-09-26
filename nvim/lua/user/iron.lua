@@ -9,7 +9,10 @@ iron.setup {
     repl_definition = {
       sh = {
         command = {"zsh"}
-      }
+      },
+      python = {
+          command = {"ipython"}
+      },
     },
     -- How the repl window will be displayed
     -- See below for more information
@@ -40,13 +43,4 @@ iron.setup {
   }
 }
 
-
---[[
-iron.core.set_config {
-  repl_open_cmd = "rightbelow 10 split",
-  preferred={
-    python = "ipython"
-  }
-}
-]]--
 
