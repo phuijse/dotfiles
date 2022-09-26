@@ -10,6 +10,7 @@ end
 
 vim.cmd [[packadd packer.nvim]]
 
+-- reload nvim whe this file is saved
 vim.cmd([[
   augroup packer_user_config
     autocmd!
@@ -27,12 +28,16 @@ return require('packer').startup(function(use)
       'nvim-treesitter/nvim-treesitter',
       'fladson/vim-kitty',
       'neovim/nvim-lspconfig',
+      'williamboman/nvim-lsp-installer',  -- simple to use language server installer
+	  'jose-elias-alvarez/null-ls.nvim',-- for formatters and linters
+      'RRethy/vim-illuminate', -- automatically highlighting other uses of the word under the cursor
       'folke/lsp-colors.nvim',
       'hrsh7th/nvim-cmp', -- autocompletion
       'hrsh7th/cmp-buffer', -- buffer completions
       'hrsh7th/cmp-path', -- path completions
       'hrsh7th/cmp-cmdline', -- cmdline completions
       'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-nvim-lua',
       -- 'glepnir/lspsaga.nvim',
       -- 'RishabhRD/popfix',
       -- 'RishabhRD/nvim-lsputils',
