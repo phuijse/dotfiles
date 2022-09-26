@@ -38,7 +38,7 @@ return packer.startup(function(use)
   -- Packer can manage itself as an optional plugin
   use 'wbthomason/packer.nvim'
 
-  use { --Others
+  use {
       'nvim-lua/plenary.nvim',
       'windwp/nvim-autopairs',
       'nvim-treesitter/nvim-treesitter',
@@ -46,6 +46,8 @@ return packer.startup(function(use)
       'kyazdani42/nvim-tree.lua',
       'RRethy/vim-illuminate', -- automatically highlighting other uses of the word under the cursor
   }
+  use 'numToStr/Comment.nvim'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'fladson/vim-kitty' -- For kitty terminal
   use 'hkupty/iron.nvim' -- REPL for python
   use { --LSP
@@ -69,8 +71,7 @@ return packer.startup(function(use)
   use { -- snipts
       'L3MON4D3/LuaSnip', --snippet engine
       'rafamadriz/friendly-snippets' -- a bunch of snippets to use
- }
-  use 'terrortylor/nvim-comment'
+  }
   use {
       'lukas-reineke/indent-blankline.nvim',
       config = function()
