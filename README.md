@@ -5,6 +5,9 @@ Clone this repo, cd to it and
     ./install_dependencies.sh
     ./install
 
+
+To set nvim do :PackerInstall and :LspInstallInfo
+
 This repo was created with
 
 1. git init
