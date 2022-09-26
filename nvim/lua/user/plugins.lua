@@ -25,7 +25,11 @@ return require('packer').startup(function(use)
 
   use {
       'hkupty/iron.nvim',
-      'nvim-treesitter/nvim-treesitter',
+      'nvim-lua/plenary.nvim',
+      'windwp/nvim-autopairs',
+      --'nvim-treesitter/nvim-treesitter',
+      'kyazdani42/nvim-web-devicons',
+      'kyazdani42/nvim-tree.lua',
       'fladson/vim-kitty',
       'neovim/nvim-lspconfig',
       'williamboman/nvim-lsp-installer',  -- simple to use language server installer
@@ -38,6 +42,8 @@ return require('packer').startup(function(use)
       'hrsh7th/cmp-cmdline', -- cmdline completions
       'hrsh7th/cmp-nvim-lsp',
       'hrsh7th/cmp-nvim-lua',
+      'L3MON4D3/LuaSnip', --snippet engine
+      'rafamadriz/friendly-snippets' -- a bunch of snippets to use
       -- 'glepnir/lspsaga.nvim',
       -- 'RishabhRD/popfix',
       -- 'RishabhRD/nvim-lsputils',
@@ -69,20 +75,6 @@ return require('packer').startup(function(use)
   use {
       'nvim-lualine/lualine.nvim',
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
- 
-  use {
-      'kyazdani42/nvim-tree.lua',
-      requires = 'kyazdani42/nvim-web-devicons',
-      config = function() 
-          require'nvim-tree'.setup {
-              auto_close = true,
-              hijack_cursor = true,
-              filters = {
-                  dotfiles = true,
-              }
-          }
-      end
   }
   
   use({
