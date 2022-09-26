@@ -1,19 +1,15 @@
-local fn = vim.fn
-
-local install_path = fn.stdpath('data') .. '/site/pack/packer/opt/packer.nvim'
-
-if fn.empty(fn.glob(install_path)) > 0 then
-    PACKER_BOOTSTRAP = fn.system {
-        "git",
-        "clone",
-        "--depth",
-        "1",
-        "https://github.com/wbthomason/packer.nvim",
-        install_path,
-    }
-    print "Installing packer close and reopen Neovim..."
+local ensure_packer = function()
+  local fn = vim.fn
+  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
     vim.cmd [[packadd packer.nvim]]
+    return true
+  end
+  return false
 end
+
+local packer_bootstrap = ensure_packer()
 
 -- reload nvim whe this file is saved
 vim.cmd([[
@@ -40,7 +36,7 @@ packer.init {
 
 return packer.startup(function(use)
   -- Packer can manage itself as an optional plugin
-  use {'wbthomason/packer.nvim', opt = true}
+  use 'wbthomason/packer.nvim'
 
   use { --Others
       'nvim-lua/plenary.nvim',
@@ -67,7 +63,8 @@ return packer.startup(function(use)
       'hrsh7th/cmp-path', -- path completions
       'hrsh7th/cmp-cmdline', -- cmdline completions
       'hrsh7th/cmp-nvim-lsp',
-      'hrsh7th/cmp-nvim-lua'
+      'hrsh7th/cmp-nvim-lua',
+      'saadparwaiz1/cmp_luasnip'
   }
   use { -- snipts
       'L3MON4D3/LuaSnip', --snippet engine
@@ -114,9 +111,8 @@ return packer.startup(function(use)
    },
    ft = {"quarto"},
    })
-   
-   if PACKER_BOOTSTRAP then 
-       require("packer").sync()
+   if packer_bootstrap then 
+       require('packer').sync()
    end
 
 end)
