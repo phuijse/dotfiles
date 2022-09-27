@@ -43,6 +43,7 @@ return packer.startup(function(use)
       'windwp/nvim-autopairs',
       'nvim-treesitter/nvim-treesitter',
       'kyazdani42/nvim-web-devicons',
+      'romgrk/barbar.nvim',
       'kyazdani42/nvim-tree.lua',
       'RRethy/vim-illuminate', -- automatically highlighting other uses of the word under the cursor
   }
@@ -81,10 +82,9 @@ return packer.startup(function(use)
   end
   }
   use {
-      'nvim-telescope/telescope.nvim', 
+      'nvim-telescope/telescope.nvim',
       requires = {'nvim-lua/plenary.nvim'}
   }
-  
   use {
       'lewis6991/gitsigns.nvim',
       requires = {'nvim-lua/plenary.nvim'},
@@ -92,14 +92,11 @@ return packer.startup(function(use)
           require('gitsigns').setup()
       end
   }
-  
   use 'folke/tokyonight.nvim'
-  
   use {
       'nvim-lualine/lualine.nvim',
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
-  
   use({
       "folke/trouble.nvim",
       requires = "kyazdani42/nvim-web-devicons",
@@ -112,7 +109,7 @@ return packer.startup(function(use)
    },
    ft = {"quarto"},
    })
-   if packer_bootstrap then 
+   if packer_bootstrap then
        require('packer').sync()
    end
 

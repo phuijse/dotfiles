@@ -11,7 +11,7 @@ require "user.trouble"
 require "user.telescope"
 require "user.comment"
 require "user.autopair"
-
+require "user.barbar"
 
 
 vim.g.tokyonight_style = "night"

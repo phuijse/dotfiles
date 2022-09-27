@@ -15,6 +15,10 @@ keymap("t", "<C-Down>", "<C-\\><C-N><C-w>j", opts)
 keymap("t", "<C-Up>", "<C-\\><C-N><C-w>k", opts)
 keymap("t", "<C-Right>", "<C-\\><C-N><C-w>l", opts)
 
+-- barbar
+keymap('n', '<A-Left>', '<Cmd>BufferPrevious<CR>', opts)
+keymap('n', '<A-Right>', '<Cmd>BufferNext<CR>', opts)
+keymap('n', '<A-q>', '<Cmd>BufferClose<CR>', opts)
 -- NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 -- formatter
