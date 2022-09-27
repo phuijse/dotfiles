@@ -56,9 +56,6 @@ return packer.startup(function(use)
       'williamboman/nvim-lsp-installer',  -- simple to use language server installer
 	  'jose-elias-alvarez/null-ls.nvim',-- for formatters and linters
       'folke/lsp-colors.nvim',
-      -- 'glepnir/lspsaga.nvim',
-      -- 'RishabhRD/popfix',
-      -- 'RishabhRD/nvim-lsputils',
   }
   use { --CMP
       'hrsh7th/nvim-cmp', -- autocompletion
@@ -85,13 +82,7 @@ return packer.startup(function(use)
       'nvim-telescope/telescope.nvim',
       requires = {'nvim-lua/plenary.nvim'}
   }
-  use {
-      'lewis6991/gitsigns.nvim',
-      requires = {'nvim-lua/plenary.nvim'},
-      config = function()
-          require('gitsigns').setup()
-      end
-  }
+  use 'lewis6991/gitsigns.nvim'
   use 'folke/tokyonight.nvim'
   use {
       'nvim-lualine/lualine.nvim',
