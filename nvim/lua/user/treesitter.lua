@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 configs.setup {
-  ensure_installed = "all",
+  ensure_installed = {"python", "rust", "lua", "bash", "julia", "r"},
   sync_install = false,
   autopairs = {
       enable = true,
