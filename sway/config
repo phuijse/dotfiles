@@ -13,8 +13,8 @@ bindsym $mod+Return exec kitty
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start wofi
-bindsym $mod+d exec wofi -I -G --show run
+# start fuzzel
+bindsym $mod+d exec fuzzel -f FiraCode -w 60 -l 25
 
 # change focus
 bindsym $mod+j focus left
@@ -166,6 +166,8 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym Print exec flameshot gui
 
 # Starting apps
+exec eval $(gnome-keyring-daemon --start)
+exec export SSH_AUTH_SOCK 
 exec swaymsg 'workspace 2; exec firefox; workspace 1'
 exec kitty
 exec mako # Notifications

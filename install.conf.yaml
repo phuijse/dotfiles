@@ -10,7 +10,6 @@
     ~/.config/waybar: waybar
     ~/.config/swaylock: swaylock
     ~/.config/gammastep: gammastep
-    ~/.config/wofi: wofi
     ~/.config/mako: mako
     ~/.config/btop: btop
     ~/.config/fish: fish

@@ -2,7 +2,7 @@
 # System and drivers
 pacman -S base base-devel libva-intel-driver vulkan-intel man-db
 # Window manager
-pacman -S sway swaylock swayidle waybar wofi mako brightnessctl wl-clipboard gammastep
+pacman -S sway swaylock swayidle waybar fuzzel mako brightnessctl wl-clipboard gammastep
 # Filesystem
 pacman -S udiskie usbutils exfat-utils ntfs-3g thunar thunar-volman gvfs
 # Wayland compatibility
