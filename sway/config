@@ -169,7 +169,7 @@ bindsym Print exec flameshot gui
 exec eval $(gnome-keyring-daemon --start)
 exec export SSH_AUTH_SOCK 
 exec swaymsg 'workspace 2; exec firefox; workspace 1'
-exec kitty
+exec foot
 exec mako # Notifications
 exec waybar # Toolbar
 exec gammastep-indicator # Redshift 
