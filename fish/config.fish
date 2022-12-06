@@ -7,7 +7,7 @@ source /opt/miniconda3/etc/fish/conf.d/conda.fish
 
 zoxide init fish | source
 starship init fish | source
-#eval (ssh-agent -c)
+fish_ssh_agent
 
 export XDG_SESSION_TYPE=wayland
 export XDG_CURRENT_DESKTOP=sway
@@ -19,8 +19,6 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export QT_QPA_PLATFORM=wayland
 export PASSWORD_STORE_X_SELECTION=primary
 
-
-#set SSH_AUTH_SOCK /run/user/1000/keyring/ssh
 
 if status is-login
     if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
