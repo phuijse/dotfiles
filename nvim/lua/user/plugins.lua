@@ -50,7 +50,7 @@ return packer.startup(function(use)
   use 'numToStr/Comment.nvim'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'fladson/vim-kitty' -- For kitty terminal
-  use 'hkupty/iron.nvim' -- REPL for python
+  use { 'michaelb/sniprun', run = 'bash ./install.sh'} -- REPL
   use { --LSP
       'neovim/nvim-lspconfig',
       'williamboman/nvim-lsp-installer',  -- simple to use language server installer
