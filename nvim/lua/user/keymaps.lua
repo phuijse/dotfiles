@@ -23,3 +23,11 @@ keymap('n', '<A-q>', '<Cmd>BufferClose<CR>', opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 -- formatter
 keymap("n", "<leader>f", ":Format<CR>", opts)
+-- SnipRun
+keymap('v', '<S-CR>', '<Plug>SnipRun', {silent = true})
+keymap('n', '<S-CR>', '<Plug>SnipRun', {silent = true})
+-- Telescope
+keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
+--keymap("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", {noremap = true, silent = true})
+keymap("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
+keymap("n", "<leader>fb", "<cmd>Telescope buffers<CR>", opts)

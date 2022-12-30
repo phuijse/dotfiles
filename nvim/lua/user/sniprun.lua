@@ -1,6 +1,6 @@
 require'sniprun'.setup({
-  selected_interpreters = {},     --# use those instead of the default for the current filetype
-  repl_enable = {},               --# enable REPL-like behavior for the given interpreters
+  selected_interpreters = {'Python3_fifo'},     --# use those instead of the default for the current filetype
+  repl_enable = {'Python3_fifo'},               --# enable REPL-like behavior for the given interpreters
   repl_disable = {},              --# disable REPL-like behavior for the given interpreters
 
   interpreter_options = {         --# interpreter-specific options, see docs / :SnipInfo <name>
@@ -10,7 +10,8 @@ require'sniprun'.setup({
       use_on_filetypes = {"markdown.pandoc"}    --# the 'use_on_filetypes' configuration key is
                                                 --# available for every interpreter
     },
-    Python3_original = {
+    Python3_fifo = {
+        interpreter = "python3",
         error_truncate = "auto"         --# Truncate runtime errors 'long', 'short' or 'auto'
                                         --# the hint is available for every interpreter
                                         --# but may not be always respected
