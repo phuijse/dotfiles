@@ -12,6 +12,7 @@ require "user.comment"
 require "user.autopair"
 require "user.barbar"
 require "user.gitsigns"
+require "user.sniprun"
 
 vim.g.tokyonight_style = "night"
 vim.cmd("colorscheme tokyonight")
