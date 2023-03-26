@@ -14,7 +14,8 @@ bindsym $mod+Return exec foot
 bindsym $mod+Shift+q kill
 
 # start fuzzel
-bindsym $mod+d exec fuzzel -f FiraCode -w 60 -l 25
+bindsym $mod+d exec fuzzel
+bindsym $mod+c exec networkmanager_dmenu
 
 # change focus
 bindsym $mod+j focus left
