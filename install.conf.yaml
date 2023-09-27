@@ -4,7 +4,7 @@
       relink: true
 
 - link:
-    ~/.config/nvim: nvim
+  #~/.config/nvim: nvim
     ~/.config/sway: sway
     ~/.config/waybar: waybar
     ~/.config/swaylock: swaylock
