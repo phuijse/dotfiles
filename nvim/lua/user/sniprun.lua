@@ -11,7 +11,7 @@ require'sniprun'.setup({
                                                 --# available for every interpreter
     },
     Python3_fifo = {
-        interpreter = "python3",
+        interpreter = "ipython",
         error_truncate = "auto"         --# Truncate runtime errors 'long', 'short' or 'auto'
                                         --# the hint is available for every interpreter
                                         --# but may not be always respected
