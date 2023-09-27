@@ -14,4 +14,4 @@ SETUVAR fish_color_valid_path:\x2d\x2dunderline
 SETUVAR fish_greeting:\x1d
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/phuijse/\x2elocal/bin
+SETUVAR fish_user_paths:/home/phuijse/Work/Gaia/common/apache\x2dant\x2d1\x2e10\x2e12/bin\x1e/home/phuijse/\x2econda/envs/gce/share/google\x2dcloud\x2dsdk\x2d435\x2e0\x2e1\x2d0/bin\x1e/home/phuijse/\x2ecargo/bin\x1e/home/phuijse/\x2elocal/bin
