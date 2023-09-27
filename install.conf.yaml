@@ -10,7 +10,6 @@
     ~/.config/swaylock: swaylock
     ~/.config/gammastep: gammastep
     ~/.config/mako: mako
-    ~/.config/btop: btop
     ~/.config/fish: fish
     ~/.config/starship.toml: starship.toml
     ~/.gitconfig: gitconfig
